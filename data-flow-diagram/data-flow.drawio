@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Airbnb Clone – DFD Level 1">
+    <mxGraphModel dx="1440" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1"
+      arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169"
+      math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- External Entities -->
+        <mxCell id="user" value="User" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="80" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="admin" value="Admin" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="80" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="gateway" value="Payment Gateway" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="260" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Processes -->
+        <mxCell id="auth" value="Authenticate User" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="listing" value="Manage Listings" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="booking" value="Manage Booking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="payment" value="Process Payment" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="260" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Data Stores -->
+        <mxCell id="userDB" value="User DB" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="60" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="propertyDB" value="Property DB" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="300" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bookingDB" value="Booking DB" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="paymentDB" value="Payment DB" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows (with geometry!) -->
+        <mxCell id="a1" style="endArrow=block;" edge="1" parent="1" source="user" target="auth">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" style="endArrow=block;" edge="1" parent="1" source="auth" target="userDB">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" style="endArrow=block;" edge="1" parent="1" source="user" target="booking">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" style="endArrow=block;" edge="1" parent="1" source="booking" target="bookingDB">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5" style="endArrow=block;" edge="1" parent="1" source="booking" target="payment">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a6" style="endArrow=block;" edge="1" parent="1" source="payment" target="paymentDB">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a7" style="endArrow=block;" edge="1" parent="1" source="payment" target="gateway">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a8" style="endArrow=block;" edge="1" parent="1" source="admin" target="listing">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a9" style="endArrow=block;" edge="1" parent="1" source="listing" target="propertyDB">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
