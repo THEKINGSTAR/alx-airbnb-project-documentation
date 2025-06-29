@@ -1,0 +1,83 @@
+<mxfile host="65bd71144e">
+    <diagram name="Airbnb Use Case Diagram" id="0">
+        <mxGraphModel dx="81562" dy="62931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="a1" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="guest" target="uc1" edge="1"/>
+                <mxCell id="a2" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="guest" target="uc2" edge="1"/>
+                <mxCell id="a3" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="guest" target="uc3" edge="1"/>
+                <mxCell id="a4" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="guest" target="uc4" edge="1"/>
+                <mxCell id="a5" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="host" target="uc1" edge="1"/>
+                <mxCell id="a6" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="host" target="uc5" edge="1"/>
+                <mxCell id="a7" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="host" target="uc6" edge="1"/>
+                <mxCell id="a8" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="host" target="uc7" edge="1"/>
+                <mxCell id="a9" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="admin" target="uc8" edge="1"/>
+                <mxCell id="a10" style="endArrow=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="admin" target="uc9" edge="1"/>
+                <mxCell id="19" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="-5940" y="-2370" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Host" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-5930" y="-2010" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="-5900" y="-1770" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Register/Login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="-5740" y="-2420" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Search Properties" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="-5740" y="-2360" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Book Property" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="-5740" y="-2300" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Leave Review" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="-5740" y="-2240" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Add/Edit Listing" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-5730" y="-2060" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="View Bookings" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-5730" y="-2000" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Respond to Reviews" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-5730" y="-1940" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Manage Users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="-5730" y="-1790" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Oversee Listings" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="-5730" y="-1730" width="140" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
